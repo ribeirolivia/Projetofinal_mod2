@@ -9,10 +9,10 @@ body {
     display: grid;
     place-items: center;  /*centraliza a imagem*/
 }
-section div#item-wrapper {
+section#carousel div#item-wrapper {
     width: 100%; /*ocupação total da pag*/
 }
-section div#item-wrapper div#item{
+section#carousel div#item-wrapper div#item{
     display: flex; /*mantem uma imagem ao lado da outra*/
     /*habilita um scroll somente nas imagens*/
     overflow-x: auto;
@@ -27,7 +27,7 @@ section div#item-wrapper div#item{
     scroll-snap-align: start; /*alinha o inicio da imagem*/
     pointer-events: none;
 }
-section div#item-wrapper div#item img{
+section#carousel div#item-wrapper div#item img{
     /*ocupação total da div*/
     width: 100%;
     height: 100%;
@@ -39,7 +39,6 @@ section div#item-wrapper div#item img{
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
-
 nav{
     padding: .8vw;
     position: relative;
@@ -83,3 +82,87 @@ nav div li a{
     text-decoration: none;
     color: #023047;
 }
+section#covid{
+    padding: 2vw;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+}
+section#covid div#alerta {
+    padding: auto;
+    border: 3px solid #023047;
+    border-radius: 5rem;
+    display: flex;
+    width: 100%;
+}
+section#covid div#alerta div#protocolo{
+    padding: 5vw;
+    
+}
+section#covid div#alerta div#protocolo h3{
+    font-size: 2vw;
+    font-weight: 600;
+    padding: 1vw;
+    text-align: start;
+    line-height: 2vw;
+}
+section#covid div#alerta div#protocolo p{
+    font-size: 1vw;
+    font-weight: 300;
+    padding: auto;
+    text-align: justify;
+    line-height: 2vw;
+
+}
+section#covid div#alerta div#covidimg img{
+    width: 50%;
+    padding: 2vw;
+    align-items: center;
+}
+
+section#cards{
+    justify-content: center;
+    align-items: center;
+    padding: 3vw;
+}
+    section#cards div#destinos1 {
+    padding: 2vw;
+    display: flex;
+} 
+section#cards div#destinos1 div {
+    border: 3px solid #023047;
+    padding: 3vw;
+    text-align: center;
+    padding: 1vw;
+    font-size: 1.4vw;
+    border-radius: 5rem;
+    background-color: #8ecae694;
+    cursor: pointer;
+    transition: 2s ease-out;    
+}
+section#cards div#destinos1 div:hover{
+    background-color: #219dbcc0;
+    transform: scale(1.2);
+}
+
+section#cards div#destinos2 {
+    padding: 2vw;
+    display: flex;
+} 
+section#cards div#destinos2 div {
+    border: 3px solid #023047;
+    padding: 3vw;
+    text-align: center;
+    padding: 1vw;
+    font-size: 1.4vw;
+    border-radius: 5rem;
+    background: #8ecae694;
+    cursor: pointer;
+    transition: 2s ease-out;    
+}
+section#cards div#destinos2 div:hover{
+    background-color: #219dbcc0;
+    transform: scale(1.2);
+}    
+/* Dar espaço entre os card*/
+/*ajustar campo covid*/
