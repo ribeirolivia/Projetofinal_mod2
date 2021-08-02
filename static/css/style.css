@@ -129,10 +129,10 @@ section#covid div#alerta div#covidimg img{
 section#cards{
     justify-content: center;
     align-items: center;
-    padding: 3vw;
+    padding: auto;
 }
     section#cards div#destinos1 {
-    padding: 2vw;
+    padding: 3vw;
     display: flex;
 } 
 section#cards div#destinos1 div {
@@ -171,8 +171,10 @@ section#cards div#destinos1 div:hover{
 }
 
 section#cards div#destinos2 {
-    padding: 2vw;
+    padding: 3vw;
     display: flex;
+    background: linear-gradient(180deg, transparent 100px, #ddd 10%);
+    padding-bottom: 6vw
 } 
 section#cards div#destinos2 div {
     border: none;
@@ -185,7 +187,7 @@ section#cards div#destinos2 div {
     transition: 2s ease-out;
     color:black;
     font-weight: 600;   
-    opacity: 0.4;  
+    opacity: 0.4; 
 }
 section#cards div#destinos2 div h2{
     color:black;
@@ -211,7 +213,7 @@ section#cards div#destinos2 div:hover{
 
 
 footer{
-    padding: .8vw;
+    padding:auto;
     position: relative;
     width: 100%;
 
@@ -235,5 +237,5 @@ footer ul li a{
 }
 
 
-/* Dar espaço entre os card*/
+
 /*ajustar campo covid*/
