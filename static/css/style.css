@@ -131,22 +131,26 @@ section#cards{
     align-items: center;
     padding: auto;
 }
-    section#cards div#destinos1 {
+section#cards div#destinos1 {
     padding: 3vw;
     display: flex;
+    width: 100%;
 } 
 section#cards div#destinos1 div {
     border: none;
     padding: 3vw;
     text-align: center;
-    margin-left: 3vw;
-    font-size: 1.4vw;
     border-radius: 5rem;
     cursor: pointer;
     transition: 2s ease-out;
-    color:black;
-    font-weight: 600; 
-    opacity: 0.4;   
+    color:black; 
+    opacity: 0.4;  
+    width: 50%; 
+}
+section#cards div#destinos1 div p{
+    word-wrap: break-word;
+    font-size: 1.2;
+    font-weight: 400;
 }
 section#cards div#destinos1 div h2{
     color:black;
