@@ -88,6 +88,7 @@ body section#viagens section#viagens-nacionais{
     padding-left: 2rem;
     padding-right: 2rem;
     vertical-align: baseline;
+    align-content: space-between;
 }
 
 body section#viagens section#viagens-nacionais div{
@@ -110,6 +111,23 @@ body section#viagens section#viagens-nacionais div img{
     width: 20vw;
     border-radius: 4%;
 }
+
+body section#viagens section#viagens-nacionais div a button{
+    border: 1px solid #023047;
+    background-color:#023047;;
+    color:white;
+    padding: 1rem;
+    font-size: .8vw;
+    font-weight: 650;
+    border-radius: .5rem;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .6s ease-out;
+    width: 40%;
+    justify-content: space-around;
+}
+
 
 /* SECTION VIAGENS INTERNACIONAIS */
 
@@ -148,4 +166,34 @@ body section#viagens section#viagens-internacionais h2{
 body section#viagens section#viagens-internacionais div img{
     width: 380px;
     border-radius: 4%;
+}
+
+/*scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+  }
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+::-webkit-scrollbar-thumb {
+    background: #023047;
+  }
+::-webkit-scrollbar-thumb:hover {
+    background: #219dbcc0;
+  }
+
+body section#viagens section#viagens-internacionais div a button{
+    border: 1px solid #023047;
+    background-color:#023047;;
+    color:white;
+    padding: 1rem;
+    font-size: .8vw;
+    font-weight: 650;
+    border-radius: .5rem;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .6s ease-out;
+    width: 40%;
+    justify-content: space-around;
 }
