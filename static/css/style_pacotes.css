@@ -95,21 +95,23 @@ body section#viagens section#viagens-nacionais div{
     width: 100%;
     justify-content: center;
     text-align: center;
-    padding-bottom: 2rem;
+    padding: 2vw;
     vertical-align: baseline;
+    border-radius: 2vw;
+  
 }
 
 body section#viagens section#viagens-nacionais h2{
-    padding-top: 1rem;
-    padding-left: 2rem;
-    padding-right: 2.5rem;
+    padding: auto;
     font-size: 1rem;
     text-align:start;
+    margin-top: .6vw;
 }
 
 body section#viagens section#viagens-nacionais div img{
     width: 20vw;
     border-radius: 4%;
+    
 }
 
 body section#viagens section#viagens-nacionais div a button{
@@ -156,11 +158,10 @@ body section#viagens section#viagens-internacionais div{
 }
 
 body section#viagens section#viagens-internacionais h2{
-    padding-top: 1.5rem;
-    padding-left: 1.5rem;
-    padding-right: 2.5rem;
+    padding: auto;
     font-size: 1rem;
     text-align:start;
+    margin-top: .6vw;
 }
 
 body section#viagens section#viagens-internacionais div img{
