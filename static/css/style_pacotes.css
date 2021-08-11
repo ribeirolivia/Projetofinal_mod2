@@ -81,18 +81,19 @@ nav div li a{
     color: #023047;
 }
 
-/* SECTION VIAGENS NACIONAIS */
 
-body section#viagens section#viagens-nacionais{
+
+body section#viagens{
     display: flex;
     padding-left: 2rem;
     padding-right: 2rem;
     vertical-align: baseline;
     align-content: space-between;
+    flex-wrap: wrap;
 }
 
-body section#viagens section#viagens-nacionais div{
-    width: 100%;
+body section#viagens div{
+    width: 25%;
     justify-content: center;
     text-align: center;
     padding: 2vw;
@@ -101,73 +102,23 @@ body section#viagens section#viagens-nacionais div{
   
 }
 
-body section#viagens section#viagens-nacionais h2{
+body section#viagens p{
     padding: auto;
     font-size: 1rem;
-    text-align:start;
+    text-align: start;
     margin-top: .6vw;
 }
+section#viagens h3{
+    text-align: center;
+    padding: auto;
+}
 
-body section#viagens section#viagens-nacionais div img{
+body section#viagens div img{
     width: 20vw;
     border-radius: 4%;
     
 }
 
-body section#viagens section#viagens-nacionais div a button{
-    border: 1px solid #023047;
-    background-color:#023047;;
-    color:white;
-    padding: 1rem;
-    font-size: .8vw;
-    font-weight: 650;
-    border-radius: .5rem;
-    display: block;
-    margin: auto;
-    cursor: pointer;
-    transition: .6s ease-out;
-    width: 40%;
-    justify-content: space-around;
-}
-
-
-/* SECTION VIAGENS INTERNACIONAIS */
-
-/* Tamanho da suiça alterado separadamente por conta da imagem ser muito grande */
- body section#viagens section#viagens-internacionais div#suica img{
-     height: 250px;
- }
-
- /* body section#viagens section#viagens-internacionais div#islandia img{
- } */
-
-
-body section#viagens section#viagens-internacionais{
-    display: flex;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    vertical-align: baseline;
-}
-
-body section#viagens section#viagens-internacionais div{
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-    padding-bottom: 2rem;
-    vertical-align: baseline;
-}
-
-body section#viagens section#viagens-internacionais h2{
-    padding: auto;
-    font-size: 1rem;
-    text-align:start;
-    margin-top: .6vw;
-}
-
-body section#viagens section#viagens-internacionais div img{
-    width: 380px;
-    border-radius: 4%;
-}
 
 /*scrollbar*/
 ::-webkit-scrollbar {
@@ -183,18 +134,30 @@ body section#viagens section#viagens-internacionais div img{
     background: #219dbcc0;
   }
 
-body section#viagens section#viagens-internacionais div a button{
-    border: 1px solid #023047;
-    background-color:#023047;;
-    color:white;
-    padding: 1rem;
-    font-size: .8vw;
-    font-weight: 650;
-    border-radius: .5rem;
-    display: block;
-    margin: auto;
-    cursor: pointer;
-    transition: .6s ease-out;
-    width: 40%;
-    justify-content: space-around;
+footer{
+    padding:auto;
+    position: relative;
+    width: 100%;
+    align-items: center;
+
+}
+footer ul{
+    align-items: center;
+    justify-content: center;
+}
+
+footer ul li{
+    background-color: #023047;
+    width: 100%;
+    list-style: none;
+    display: flex; 
+    justify-content: center;
+}
+
+footer ul li a{
+    padding: 2vw; 
+    justify-content: center;
+    color: #fff;
+    font-size: 1.5vw;
+    text-decoration: none;
 }

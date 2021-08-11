@@ -91,6 +91,20 @@ nav ul li{
     font-size: 1vw;
 
 }
+nav ul li#adm{
+    padding: 1vw;
+    text-align: end;
+    text-decoration: none;
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+}
+nav ul li#adm a img{
+    color: #fff; 
+    text-decoration: none;
+    width: 15%;
+  
+}
 nav ul li a{
     text-decoration: none;
     color: #fff;
@@ -185,11 +199,11 @@ section#cards div#destinos1 div p{
     word-wrap: break-word;
     font-size: 1.2;
     font-weight: 600;
-    color: black;
+    color: #fff;
     text-decoration: none;
 }
 section#cards div#destinos1 div h2{
-    color:black;
+    color:#fff;
     font-weight: 700; 
     text-decoration: none;
     
@@ -225,7 +239,7 @@ section#cards div#destinos2 div {
     border-radius: 5rem;
     cursor: pointer;
     transition: 2s ease-out;
-    color:black;
+    color:#fff;
     font-weight: 600; 
     opacity: 0.4;  
     width: 100%; 
@@ -235,11 +249,11 @@ section#cards div#destinos2 div p{
     word-wrap: break-word;
     font-size: 1.2;
     font-weight: 600;
-    color: black;
+    color: #fff;
     text-decoration: none;
 }
 section#cards div#destinos2 div h2{
-    color:black;
+    color:#fff;
     font-weight: 700;
     text-decoration: none; 
     
@@ -268,7 +282,12 @@ footer{
     padding:auto;
     position: relative;
     width: 100%;
+    align-items: center;
 
+}
+footer ul{
+    align-items: center;
+    justify-content: center;
 }
 
 footer ul li{
@@ -286,11 +305,4 @@ footer ul li a{
     font-size: 1.5vw;
     text-decoration: none;
 }
-footer ul li a img{
-    justify-content: end;
-    align-items: flex-end;
-    color: #fff;
-    text-decoration: none;
-    width: 15%;
-    margin-left: 2vw;
-}
+
