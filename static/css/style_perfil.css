@@ -62,23 +62,24 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: #fff;
-} 
-nav div{
-    background-color: #219dbcaf;
-    width: 100%;
-    list-style: none;
 }
-nav div li{
-    justify-content: center;
-    display: flex;
-    margin-left: 3vw;
-    font-size: 1.5vw;
-    font-weight: 700;
-}
-nav div li a{
+nav ul li#adm{
+    padding: 1vw;
+    text-align: end;
     text-decoration: none;
-    color: #023047;
+    position: absolute;
+    top: .5vw;
+    right: 1vw;
+       
 }
+nav ul li#adm a img{
+    color: #fff; 
+    text-decoration: none;
+    width: 15%;
+  
+}
+
+
 
 section div#title{
 text-align: center; 
@@ -88,19 +89,19 @@ line-height: 2vw;
 
 }
 section div#title h1{
-    font-size: 2vw;
+    font-size: 1.8vw;
     font-weight: 600;
-    padding: 2vw;
+    padding: .8vw;
 }
 section div#title h2{
     font-size: 1.5vw;
     font-weight: 400;
-
 }
 section#perfis{
     display: flex;
     align-items: center;
     padding: 2vw;
+    padding-top: 1vw ;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -114,7 +115,16 @@ section#perfis article{
     justify-content: center;
     align-items: center;
     text-align: center;
-    cursor: pointer;
+    cursor: pointer; 
+    width: 18vw;
+    height: 30vw;
+}
+section#perfis article p{
+    line-height: 1.5vw;
+    width: 100%;
+    height: 35%;
+    text-align: justify;
+    margin-top: .8vw;
 }
 section#perfis article img {
     width: 180px;
@@ -124,9 +134,9 @@ section#perfis article img {
     align-items: center;
 }
 section#perfis article div#contato{
-    width: 10px;
     font-size: 3vw;
     display: flex;
+    justify-content: center;
 }
 
 section#perfis article div#contato a{

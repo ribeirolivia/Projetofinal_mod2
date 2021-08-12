@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
 }
 body{
     height: 100%;
@@ -24,7 +25,7 @@ section#login form{
     background-color: #fff;
     width: 50rem;
     position: relative;
-    box-shadow: #a8dadc 0px 8px 24px;
+
     border-radius: 2rem;
     
 }
@@ -32,7 +33,7 @@ section#login form{
 section#login form h1{
     padding-bottom: 3rem;
     text-align: center;
-    color: #219dbc ;
+    color: #023047 ;
     font-size: 2vw;
     font-weight: 500;
 }
@@ -52,9 +53,9 @@ section#login form label {
 }
 
 section#login form button {
-    border: 1px solid #219dbc;
+    border: 1px solid #023047;
     background-color: #fff;
-    color: #219dbc;
+    color: #023047;
     font-size: 1rem;
     font-weight: 600;
     padding: 1rem;
@@ -69,13 +70,13 @@ section#login form button {
 }
 
 section#login form button:hover {
-    background-color: #219dbc;
+    background-color: #0a4c5c;
     color: #fff;
 }
 
 section#login form a{
     text-decoration: none;
-    color: #219dbc;
+    color: #023047;
     font-size: 2rem;
     position: absolute;
 }

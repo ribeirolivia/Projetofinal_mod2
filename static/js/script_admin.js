@@ -1,8 +1,13 @@
-let inputDestino = document.querySelector('#destino')
-let inputImagem = document.querySelector('#imagem')
+setTimeout(() => {
+   document.querySelector('#msg').style.display = 'none'
+}, 3000)
+
+let inputDestino = document.getElementById('#destino')
+let inputImagem = document.querySelector('#link')
 let inputPreco = document.querySelector('#preco')
-let textareaDescricao = document.querySelector('#descricao')
-let inputbtn = document.querySelector('#cadastro')
+let descricao = document.querySelector('#descricao')
+let tipoviagem = document.querySelector('#tipo_viagem')
+let inputbtn = document.querySelector('#btnCadastro')
 let nomeOk = false 
 let emailOk = false 
 let msgOk = false
@@ -11,23 +16,24 @@ btnEnviar.disabled = true
 
 
 
+
 // CAMPO DO DESTINO
 inputDestino.addEventListener('keydown', () => { 
 
-    if(inputDestino.value.length < 4){
+    if(inputDestino.value.length < 3 ){
        inputDestino.style.borderColor = 'red' 
-       nomeOk = false
+       DestinoOk = false
     } else {
        inputDestino.style.borderColor = 'blue' 
        DestinoOk = true
     }
  
-    if(inputDestino.value == '' || inputNome.value == undefined || inputNome.value == null) {
+    if(inputDestino.value == '' || inputDestino.value == undefined || inputDestino.value == null) {
        inputDestino.style.borderColor = '#ccc'
     }
  
 
-    if (nomeOk && emailOk && msgOk) {
+    if (DestinoOk && descricaoOk && precoOK && imagemOK && tipoviagemok) {
        btnEnviar.disabled = false
     } else { 
        btnEnviar.disabled = true
@@ -38,12 +44,12 @@ inputDestino.addEventListener('keydown', () => {
 //  CAMPO DA IMAGEM
  inputImagem.addEventListener('keydown', () => { 
 
-    if(inputImagem.value.length < 4){
+    if(inputImagem.value.length < 3){
         inputImagem.style.borderColor = 'red' 
-       nomeOk = false
+       imagemOk = false
     } else {
         inputImagem.style.borderColor = 'blue' 
-       DestinoOk = true
+       imagemOk = true
     }
  
     if(inputImagem.value == '' || inputImagem.value == undefined || inputImagem.value == null) {
@@ -51,81 +57,92 @@ inputDestino.addEventListener('keydown', () => {
     }
  
 
-    if (nomeOk && emailOk && msgOk) {
-       btnEnviar.disabled = false
-    } else { 
-       btnEnviar.disabled = true
-    }
+    if (DestinoOk && descricaoOk && precoOK && imagemOK && tipoviagemok) {
+      btnEnviar.disabled = false
+   } else { 
+      btnEnviar.disabled = true
+   }
+
  
  })
 
 //  CAMPO DE DESCRICAO
-textareaDescricao.addEventListener('keydown', () => { 
+descricao.addEventListener('keydown', () => { 
 
-    if(textareaDescricao.value.length < 4){
-        textareaDescricao.style.borderColor = 'red' 
-       nomeOk = false
+    if(descricao.value.length < 4){
+        descricao.style.borderColor = 'red' 
+       descricaoOk = false
     } else {
-        textareaDescricao.style.borderColor = 'blue' 
-       DestinoOk = true
+        descricao.style.borderColor = 'blue' 
+       descricaoOk = true
     }
  
-    if(textareaDescricao.value == '' || textareaDescricao.value == undefined || textareaDescricao.value == null) {
-        textareaDescricao.style.borderColor = '#ccc'
+    if(descricao.value == '' || descricao.value == undefined || descricao.value == null) {
+        descricao.style.borderColor = '#ccc'
     }
  
 
-    if (nomeOk && emailOk && msgOk) {
-       btnEnviar.disabled = false
-    } else { 
-       btnEnviar.disabled = true
-    }
+    if (DestinoOk && descricaoOk && precoOK && imagemOK && tipoviagemok) {
+      btnEnviar.disabled = false
+   } else { 
+      btnEnviar.disabled = true
+   }
+
  
  })
-
-
 
 
 
 // CAMPO DO PRECO
 inputPreco.addEventListener('keydown', () => { 
-    if(inputNome.value.length < 4){
-       inputNome.style.borderColor = 'red' 
+    if(inputPreco.value.length < 4){
+       inputPreco.style.borderColor = 'red'
+       precoOK = false  
     } else {
        inputNome.style.borderColor = 'blue'
+       precoOK = true
     }
- })
+ 
+    if(inputPreco.value == '' || inputPreco.value == undefined || inputPreco.value == null) {
+      inputPreco.style.borderColor = '#ccc'
+   }
+    
+    if (DestinoOk && descricaoOk && precoOK && imagemOK && tipoviagemok) {
+      btnEnviar.disabled = false
+   } else { 
+      btnEnviar.disabled = true
+   }
 
  
+ 
+   })
 
 
-
-
-
-
-
-
-
-
-
-
-
- textareaDescricao.addEventListener('keyup', ()=>{
-    if(textareaDescricao.value.length > 100){
-       textareaDescricao.style.borderColor = 'red' 
+   tipoviagem.addEventListener('keyup', ()=>{
+    if(tipoviagem.value.length > 100){
+       tipoviagem.style.borderColor = 'red'
+       tipoviagemok = false
     } else {
-       textareaDescricao.style.borderColor = 'green' 
+       tipoviagem.style.borderColor = 'green'
+       tipoviagemok = true
     }
- })
+    
+    if(tipoviagem.value == '' || tipoviagem.value == undefined || tipoviagem.value == null) {
+      tipoviagem.style.borderColor = '#ccc'
+  }
+ 
+ 
+  if (DestinoOk && descricaoOk && precoOK && imagemOK && tipoviagemok) {
+   btnEnviar.disabled = false
+} else { 
+   btnEnviar.disabled = true
+}
+
+ 
+ 
+ 
+ 
+   })
  
 
 
-
-
-
- 
-btnEnviar.addEventListener('click', () => {
-    alert('Mensagem enviada com sucesso!, aguarde pelo retorno ;D')
- })
- 
- audi

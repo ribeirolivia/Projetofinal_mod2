@@ -64,21 +64,20 @@ nav ul li a{
     text-decoration: none;
     color: #fff;
 } 
-nav div{
-    background-color: #219dbcaf;
-    width: 100%;
-    list-style: none;
-}
-nav div li{
-    justify-content: center;
-    display: flex;
-    margin-left: 3vw;
-    font-size: 1.5vw;
-    font-weight: 700;
-}
-nav div li a{
+nav ul li#adm{
+    padding: 1vw;
+    text-align: end;
     text-decoration: none;
-    color: #023047;
+    position: absolute;
+    top: .5vw;
+    right: 1vw;
+       
+}
+nav ul li#adm a img{
+    color: #fff; 
+    text-decoration: none;
+    width: 15%;
+  
 }
 
 

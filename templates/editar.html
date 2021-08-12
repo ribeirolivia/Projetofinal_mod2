@@ -53,19 +53,19 @@
     <section id="body">
 
         <div id="formulario">
-            <form action="/new" method="POST">
+            <form action="/editar/{{viagem.id}}" method="POST">
 
                 <!-- CAMPO DESTINO -->
                 <label for="destino">Destino</label>
-                <input type="text" placeholder="Digite o novo destino" id="destino" name="destino" value="{{viagem.destino}}">
+                <input type="text" placeholder="Digite o novo destino" name="destino" value="{{viagem.destino}}">
 
                 <!-- CAMPO IMAGEM -->
                 <label for="link">Link da imagem</label>
-                <input type="text" placeholder="Link da imagem"   id="link" name="link" value="{{viagem.link}}">
+                <input type="text" placeholder="Link da imagem" name="link" value="{{viagem.link}}">
 
                 <!-- CAMPO PRECO -->
                 <label for="preco">Preço</label>
-                <input type="number" placeholder="Insira o valor do novo destino" id="preco" name="preco" value="{{viagem.preco}}">
+                <input type="number" placeholder="Insira o valor do novo destino" name="preco" value="{{viagem.preco}}">
 
                 <!-- CAMPO DESCRICAO -->
                 <label for="descricao">Descrição do novo destino</label>
@@ -82,7 +82,7 @@
                     <option value="viagem-internacional">Viagem Internacional</option>
                 </select>
 
-                <button type="submit" id="btnCadastro" name='btnCadastro'>Inserir</button>
+                <button type="submit" name='btnEditar'>Inserir</button>
             </form>
         </div>
 
